@@ -3,7 +3,7 @@
 
 // 1.Write a PHP function to sort an array of strings by their length, in ascending order. (Hint: You can use the usort() function to define a custom sorting function.)
 
-function sort_strings_by_length($arr) {
+function sort_strings_length($arr) {
     usort($arr, function($a, $b) {
         return strlen($a) - strlen($b);
     });
@@ -12,8 +12,9 @@ function sort_strings_by_length($arr) {
 
 
 $arr = array("apple", "banana", "orange", "grapefruit");
-$sorted_arr = sort_strings_by_length($arr);
+$sorted_arr = sort_strings_length($arr);
 print_r($sorted_arr);
+
 
 
 
